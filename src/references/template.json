@@ -1,0 +1,74 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://searchuxcdn.blob.core.windows.net/designerapp/images/DefaultMRTIcon.png",
+              "size": "Small",
+              "horizontalAlignment": "Center",
+              "altText": "EIA Data"
+            }
+          ],
+          "height": "stretch"
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "[${title}](${url})",
+              "color": "Accent",
+              "size": "Medium",
+              "weight": "Bolder",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "**${stateDescription}** | ${sectorDescription} | Period: ${period}",
+              "spacing": "Small",
+              "$when": "${stateDescription != ''}"
+            },
+            {
+              "type": "FactSet",
+              "facts": [
+                {
+                  "title": "Ash Content",
+                  "value": "${ashContent} %",
+                  "$when": "${ashContent != ''}"
+                },
+                {
+                  "title": "Consumption for EG",
+                  "value": "${consumptionForEg} thousand short tons",
+                  "$when": "${consumptionForEg != ''}"
+                },
+                {
+                  "title": "Cost per BTU",
+                  "value": "${costPerBtu} $/MMBtu",
+                  "$when": "${costPerBtu != ''}"
+                }
+              ],
+              "spacing": "Medium"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${fueltypeid} ${sectorid} ${location}",
+              "isVisible": false
+            }
+          ],
+          "horizontalAlignment": "Left",
+          "spacing": "Medium"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

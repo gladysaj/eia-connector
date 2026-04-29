@@ -1,0 +1,92 @@
+[
+  {
+    "name": "title",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true",
+    "labels": ["title"]
+  },
+  {
+    "name": "period",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "stateDescription",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "location",
+    "type": "String",
+    "isQueryable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "sectorDescription",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "sectorid",
+    "type": "String",
+    "isQueryable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "fuelTypeDescription",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "fueltypeid",
+    "type": "String",
+    "isQueryable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "ashContent",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "consumptionForEg",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "costPerBtu",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true"
+  },
+  {
+    "name": "lastModified",
+    "type": "dateTime",
+    "isQueryable": "true",
+    "isRetrievable": "true",
+    "labels": ["lastModifiedDateTime"]
+  },
+  {
+    "name": "url",
+    "type": "String",
+    "isQueryable": "true",
+    "isSearchable": "true",
+    "isRetrievable": "true",
+    "labels": ["url"]
+  }
+]
